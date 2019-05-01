@@ -13,13 +13,14 @@ if (process.env.JAWSDB_URL) {
 
 } else {
   connection = mysql.createConnection({
-    host: "127.0.0.1",
+    host: "localhost",
     port: 3309,
     dialect: "mysql",
   })
 }
+
 var sequelize = new Sequelize("chirpy", "root", "", {
-  host: "127.0.0.1",
+  host: "localhost",
   port: 3309,
   dialect: "mysql",
   pool: {
