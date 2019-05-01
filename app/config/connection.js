@@ -20,7 +20,7 @@ if (process.env.JAWSDB_URL) {
 }
 var sequelize = new Sequelize("chirpy", "root", "", {
   host: "localhost",
-  port: 3306,
+  port: 3309,
   dialect: "mysql",
   pool: {
     max: 5,
